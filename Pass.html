@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verifica Codice</title>
+    <script>
+        function verificaCodice() {
+            const codiceInserito = document.getElementById("codice").value;
+            const codiceCorretto = "245106";  // sostituisci con il codice scelto
+
+            if (codiceInserito === codiceCorretto) {
+                alert("Brava, apri la prossima busta!");
+            } else {
+                alert("Hai sbagliato, ritenta");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Inserisci il codice</h1>
+    <input type="text" id="codice" />
+    <button onclick="verificaCodice()">Verifica</button>
+    <!-- Commento aggiunto per forzare un nuovo commit -->
+</body>
+</html>
